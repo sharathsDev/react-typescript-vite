@@ -1,9 +1,6 @@
-
 const Navbar = () => {
-    const name="sarath"
-  return (
-    <div>Navbar={name}</div>
-  )
-}
+  const name = 'sarath';
+  return <div>Navbar={name}</div>;
+};
 
-export default Navbar
+export default Navbar;
