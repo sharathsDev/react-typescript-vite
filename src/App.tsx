@@ -18,6 +18,8 @@ import UserContextProvider from './components/context/UserContextProvider';
 import User from './components/context/User';
 import Timer from './components/effect/Timer';
 import { CounterClass } from './components/class/Counter';
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
 const App = () => {
   const [name, setName] = useState<string>('');
 
@@ -67,6 +69,7 @@ const App = () => {
       </UserContextProvider>
       <Timer />
       <CounterClass message="The count value is " />
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 };
