@@ -16,6 +16,8 @@ import Box from './components/context/Box';
 import ThemeContextProvider from './components/context/ThemeContextProvider';
 import UserContextProvider from './components/context/UserContextProvider';
 import User from './components/context/User';
+import Timer from './components/effect/Timer';
+import { CounterClass } from './components/class/Counter';
 const App = () => {
   const [name, setName] = useState<string>('');
 
@@ -63,6 +65,8 @@ const App = () => {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <Timer />
+      <CounterClass message="The count value is " />
     </div>
   );
 };
