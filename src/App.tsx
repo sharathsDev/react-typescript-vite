@@ -24,6 +24,7 @@ import List from './components/generics/List';
 import RandomNumber from './components/restriction/RandomNumber';
 import Toast from './components/templateliterals/Toast';
 import CustomButton from './components/html/Button';
+import Text from './components/polymorphic/Text';
 const App = () => {
   const [name, setName] = useState<string>('');
 
@@ -93,6 +94,15 @@ const App = () => {
       <CustomButton varient="primary" onClick={() => console.log('clicked')}>
         Primary button
       </CustomButton>
+      <Text as="p" size="md" color="secondary">
+        Paragraph
+      </Text>
+      <Text as="h1" size="lg" color="primary">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="id" size="sm" color="secondary">
+        label
+      </Text>
     </div>
   );
 };
